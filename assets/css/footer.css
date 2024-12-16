@@ -1,0 +1,74 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--bg-light);
+    padding: 3rem 2rem 1rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.footer-section h3 {
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.japanese-name {
+    color: var(--logo-blue);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hours-list, .contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-list li, .contact-list li {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.contact-list i {
+    width: 20px;
+    color: var(--primary-green);
+    margin-right: 0.5rem;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .contact-list li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-list i {
+        margin: 0;
+    }
+}

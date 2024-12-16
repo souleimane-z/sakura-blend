@@ -1,0 +1,20 @@
+
+:root {
+    --primary-bg: #e1ded2;     /* Fond principal beige */
+    --logo-blue: #013984;      /* Bleu du logo */
+
+    --primary-green: #2D6A56;  /* Vert profond - navigation/boutons */
+    --secondary-green: #3F8B6E;/* Vert moyen - hover/accents */
+
+    --text-dark: #2C3E35;      /* Texte principal - gris verdâtre */
+    --bg-light: #F5F4F0;       /* Sections - gris clair */
+    --border: #C5C2B8;         /* Bordures - beige foncé */
+
+    --white: #ffffff;
+    --black: #000000;
+}
+
+@font-face {
+    font-family: 'Kingred';
+    src: url(../fonts/kingred.otf) format("opentype");
+}
