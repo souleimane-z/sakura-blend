@@ -7,7 +7,19 @@ sakura-blend/
 │
 ├── assets/                 # Ressources statiques
 │   ├── css/
-│   │   └── style.css      # Styles du site
+│   │   └── footer.css      
+│   │   ├── header.css
+│   │   ├── layout.css
+│   │   ├── navigation.css
+│   │   ├── reset.css
+│   │   ├── style.css           # Styles du site + import des autres fichiers css
+│   │   ├── typography.css
+│   │   ├── variables.css
+│   │   └── components/   
+│   │   │   ├── footer.php   
+│   │   │   ├── forms.css
+│   │       └── buttons.css
+│   │
 │   ├── js/
 │   │   └── main.js        # JavaScript (menu mobile, validations)
 │   └── images/
