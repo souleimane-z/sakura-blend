@@ -1,0 +1,23 @@
+.banner-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.banner-image {
+    width: 50%;
+    position: relative;
+    justify-content: center;
+}
+.banner-image img {
+    width: 80%;
+    padding: 2rem;
+}
+.banner-text{
+    width: 50%;
+}
+.banner-text h1 {
+    font-family: 'Kingred', serif;
+    font-size: 2rem;
+}

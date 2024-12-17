@@ -10,4 +10,6 @@ body {
     min-height: 100vh;
     background-color: var(--primary-bg);
     color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
 }

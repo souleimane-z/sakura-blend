@@ -1,10 +1,27 @@
+<?php
+
+$current_page = basename($_SERVER['PHP_SELF']);
+
+function getPageTitle($current_page) {
+    $titles = [
+        'index.php' => 'Accueil - Sakura Blend - サクラ ブレンド - Restaurant Japonais',
+        'menu.php' => 'Notre Carte - Sakura Blend - Restaurant Japonais',
+        'reservation.php' => 'Réservation - Sakura Blend - Restaurant Japonais',
+        'contact.php' => 'Contact - Sakura Blend - Restaurant Japonais',
+        'default' => 'Sakura Blend - サクラ ブレンド - Restaurant Japonais'
+    ];
+
+    return isset($titles[$current_page]) ? $titles[$current_page] : $titles['default'];
+}
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sakura Blend - サクラ ブレンド - Restaurant Japonais</title>
+    <title><?php echo getPageTitle($current_page); ?></title>
 
     <meta name="description" content="Sakura Blend - Restaurant japonais authentique à Lille. Découvrez notre cuisine raffinée dans une ambiance zen et élégante.">
     <meta name="keywords" content="restaurant japonais, cuisine japonaise, sushi, ramen, Lille, Sakura Blend">
@@ -30,6 +47,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -37,6 +55,9 @@
     <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
+
+<div id="bg-general"></div>
+
 <?php
 function getActivePage() {
     $currentFile = $_SERVER['PHP_SELF'];
@@ -69,7 +90,7 @@ function getMenuItems() {
 
 <nav class="main-nav">
     <div class="nav-brand">
-        <a href="/">
+        <a href="index.php">
             <span class="logo-text">Sakura Blend</span>
             <span class="logo-jp">サクラ ブレンド</span>
         </a>

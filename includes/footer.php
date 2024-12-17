@@ -21,9 +21,9 @@
         <div class="footer-section">
             <h3>Contact</h3>
             <ul class="contact-list">
-                <li><i class="fa-solid fa-location-dot"></i> 123 Rue Example, Ville</li>
-                <li><i class="fa-solid fa-phone"></i> 01 23 45 67 89</li>
-                <li><i class="fa-solid fa-envelope"></i> contact@sakurablend.fr</li>
+                <li><i class="fa-solid fa-location-dot"></i> 123 Rue Barbusse, Lille</li>
+                <li><i class="fa-solid fa-phone"></i> 03 20 15 16 17</li>
+                <li><i class="fa-solid fa-envelope"></i><a href="contact.php" id="footerContact"> Nous contacter</a></li>
             </ul>
         </div>
     </div>

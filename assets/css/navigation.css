@@ -23,6 +23,7 @@
 }
 
 .logo-jp {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     color: var(--primary-green);
     font-size: 1rem;
 }
@@ -30,6 +31,7 @@
 .nav-links {
     display: flex;
     list-style: none;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -42,15 +44,14 @@
     align-items: center;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .nav-links a i:hover {
     color: var(--primary-green);
 }
 
-.nav-links .active a {
+.nav-links .active a, .nav-links .active a i {
     color: var(--primary-green);
 }
 
-/* Bouton menu mobile */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -74,9 +75,10 @@
         display: none;
         width: 100%;
         position: absolute;
-        top: 100%;
+        z-index: 1000;
+        top: 10%;
         left: 0;
-        background-color: var(--white);
+        background-color: var(--bg-light);
         padding: 1rem;
         flex-direction: column;
         align-items: center;

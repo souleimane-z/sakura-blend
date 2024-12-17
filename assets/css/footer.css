@@ -1,6 +1,5 @@
 .footer {
-    position: fixed;
-    bottom: 0;
+    flex-shrink: 0;
     width: 100vw;
     background-color: var(--bg-light);
     padding: 3rem 2rem 1rem;
@@ -18,12 +17,14 @@
 
 .footer-section h3 {
     color: var(--primary-green);
+    font-family: 'Kingred', serif;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .japanese-name {
     color: var(--logo-blue);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
     margin-bottom: 1rem;
 }
@@ -53,7 +54,14 @@
     color: var(--text-dark);
 }
 
-/* Responsive */
+#footerContact {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+#footerContact:hover{
+    color: var(--secondary-green);
+}
+
 @media (max-width: 768px) {
     .footer-content {
         grid-template-columns: 1fr;
