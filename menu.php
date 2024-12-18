@@ -13,13 +13,13 @@ $menu = include __DIR__ . '/includes/menu.php';
 
                 <div class="col-md-12 text-center" id="menu-filters">
                     <ul>
-                        <li><a class="filter active" data-filter=".entrees">Entrées</a></li>
+                        <li><a class="filter active" data-filter=".menu-restaurant">Tout voir</a></li>
+                        <li><a class="filter" data-filter=".entrees">Entrées</a></li>
                         <li><a class="filter" data-filter=".plats">Plats</a></li>
                         <li><a class="filter" data-filter=".sushis">sushis</a></li>
                         <li><a class="filter" data-filter=".desserts">Desserts</a></li>
                         <li><a class="filter" data-filter=".thes">Thés</a></li>
                         <li><a class="filter" data-filter=".boissons">Boissons</a></li>
-                        <li><a class="filter" data-filter=".menu-restaurant">Tout voir</a></li>
                     </ul>
                 </div>
 
