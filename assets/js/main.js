@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Fonction de mise à jour des créneaux pour la réservation
 async function updateCreneaux() {
     const dateInput = document.getElementById('date');
     const heureSelect = document.getElementById('heure');
