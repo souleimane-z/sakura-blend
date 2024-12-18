@@ -2,17 +2,38 @@
 
 $current_page = basename($_SERVER['PHP_SELF']);
 
-function getPageTitle($current_page) {
-    $titles = [
-        'index.php' => 'Accueil - Sakura Blend - サクラ ブレンド - Restaurant Japonais',
-        'menu.php' => 'Notre Carte - Sakura Blend - Restaurant Japonais',
-        'reservation.php' => 'Réservation - Sakura Blend - Restaurant Japonais',
-        'contact.php' => 'Contact - Sakura Blend - Restaurant Japonais',
-        'default' => 'Sakura Blend - サクラ ブレンド - Restaurant Japonais'
+function getPageMetas($current_page) {
+    return [
+        'index.php' => [
+            'title' => 'Accueil - Sakura Blend - サクラ ブレンド - Restaurant Japonais',
+            'description' => 'Sakura Blend - Restaurant japonais authentique à Lille. Découvrez notre cuisine raffinée et halal dans une ambiance zen et élégante.',
+            'keywords' => 'restaurant japonais, cuisine japonaise, halal, ramen, Lille, Sakura Blend'
+        ],
+        'menu.php' => [
+            'title' => 'Notre Carte - Sakura Blend - Restaurant Japonais',
+            'description' => 'Découvrez notre carte de spécialités japonaises traditionnelles. Ramen, tempura, et plus encore, le tout certifié halal.',
+            'keywords' => 'menu japonais, ramen halal, tempura, cuisine japonaise halal, Lille'
+        ],
+        'reservation.php' => [
+            'title' => 'Réservation - Sakura Blend - Restaurant Japonais',
+            'description' => 'Réservez votre table au Sakura Blend. Profitez d\'une expérience culinaire japonaise unique à Lille.',
+            'keywords' => 'réservation restaurant japonais, restaurant japonais Lille, Sakura Blend réservation'
+        ],
+        'contact.php' => [
+            'title' => 'Contact - Sakura Blend - Restaurant Japonais',
+            'description' => 'Contactez le restaurant Sakura Blend à Lille. Questions, suggestions ou demandes spéciales, nous sommes à votre écoute.',
+            'keywords' => 'contact restaurant japonais, Sakura Blend Lille, adresse restaurant japonais'
+        ],
+        'default' => [
+            'title' => 'Sakura Blend - サクラ ブレンド - Restaurant Japonais',
+            'description' => 'Sakura Blend - Restaurant japonais authentique à Lille. Découvrez notre cuisine raffinée dans une ambiance zen et élégante.',
+            'keywords' => 'restaurant japonais, cuisine japonaise, sushi, ramen, Lille, Sakura Blend'
+        ]
     ];
-
-    return isset($titles[$current_page]) ? $titles[$current_page] : $titles['default'];
 }
+
+$pageMetas = getPageMetas($current_page);
+$currentMeta = isset($pageMetas[$current_page]) ? $pageMetas[$current_page] : $pageMetas['default'];
 ?>
 
 <!doctype html>
@@ -21,21 +42,21 @@ function getPageTitle($current_page) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><?php echo getPageTitle($current_page); ?></title>
+    <title><?php echo $currentMeta['title']; ?></title>
 
-    <meta name="description" content="Sakura Blend - Restaurant japonais authentique à Lille. Découvrez notre cuisine raffinée dans une ambiance zen et élégante.">
-    <meta name="keywords" content="restaurant japonais, cuisine japonaise, sushi, ramen, Lille, Sakura Blend">
+    <meta name="description" content="<?php echo $currentMeta['description']; ?>">
+    <meta name="keywords" content="<?php echo $currentMeta['keywords']; ?>">
     <meta name="author" content="Sakura Blend">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sakura Blend - Restaurant Japonais Authentique">
-    <meta property="og:description" content="Découvrez une expérience culinaire japonaise unique à Lille">
-    <meta property="og:image" content="/assets/images/og-image.png">
+    <meta property="og:title" content="<?php echo $currentMeta['title']; ?>">
+    <meta property="og:description" content="<?php echo $currentMeta['description']; ?>">
+    <meta property="og:image" content="./assets/images/og-image.png">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Sakura Blend - Restaurant Japonais">
-    <meta property="twitter:description" content="Découvrez une expérience culinaire japonaise unique à Lille">
-    <meta property="twitter:image" content="/assets/images/og-image.png">
+    <meta property="twitter:title" content="<?php echo $currentMeta['title']; ?>">
+    <meta property="twitter:description" content="<?php echo $currentMeta['description']; ?>">
+    <meta property="twitter:image" content="./assets/images/og-image.png">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
