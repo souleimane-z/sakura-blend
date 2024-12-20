@@ -12,4 +12,5 @@ body {
     color: var(--text-dark);
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }

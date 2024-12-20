@@ -1,0 +1,191 @@
+.hero {
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background-color: var(--bg-light);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-green);
+    font-family: 'Kingred', serif;
+}
+
+.hero-content p {
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+.hero-image {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.btn-primary {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-green);
+}
+
+.btn-outline {
+    border: 2px solid var(--primary-green);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.special-dishes {
+    padding: 80px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.special-dishes h2 {
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Kingred', serif;
+}
+
+.special-dishes p.subtitle {
+    color: var(--text-dark);
+    margin-bottom: 3rem;
+}
+
+.dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.dish-card {
+    background: var(--bg-light);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.dish-card:hover {
+    transform: translateY(-5px);
+}
+
+.dish-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.dish-card h3 {
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.price {
+    color: var(--logo-blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-section {
+    padding: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Kingred', serif;
+}
+
+.japanese-text {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    color: var(--logo-blue);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature i {
+    font-size: 2rem;
+    color: var(--primary-green);
+}
+
+.feature span {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .dishes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dishes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
