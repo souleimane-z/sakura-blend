@@ -1,20 +1,19 @@
 <?php
 include_once __DIR__ . '/includes/header.php';
 
-// Initialisation des variables
+
 $errors = [];
 $success = false;
 
-// Traitement du formulaire
+
 if(isset($_POST['envoyer'])) {
-    // Validation des champs
+
     $nom = htmlspecialchars(trim($_POST['nom']));
     $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
     $sujet = htmlspecialchars(trim($_POST['sujet']));
     $message = htmlspecialchars(trim($_POST['message']));
     $date = date('d/m/Y H:i');
 
-    // Vérification des champs
     if(empty($nom)) {
         $errors['nom'] = "Le nom est requis";
     }
@@ -25,7 +24,6 @@ if(isset($_POST['envoyer'])) {
         $errors['message'] = "Le message est requis";
     }
 
-    // Si pas d'erreurs, enregistrement dans le CSV
     if(empty($errors)) {
         $newMessage = [$date, $nom, $email, $sujet, $message];
         $file = fopen('admin/data/messages.csv', 'a');
@@ -51,8 +49,10 @@ if(isset($_POST['envoyer'])) {
                 <input type="text"
                        id="nom"
                        name="nom"
+                       placeholder="Écrivez votre Nom ici.."
                        value="<?php echo isset($_POST['nom']) ? htmlspecialchars($_POST['nom']) : ''; ?>"
-                       class="<?php echo isset($errors['nom']) ? 'error' : ''; ?>">
+                       class="<?php echo isset($errors['nom']) ? 'error' : ''; ?>"
+                >
                 <?php if(isset($errors['nom'])): ?>
                     <span class="error-message"><?php echo $errors['nom']; ?></span>
                 <?php endif; ?>
@@ -63,8 +63,10 @@ if(isset($_POST['envoyer'])) {
                 <input type="email"
                        id="email"
                        name="email"
+                       placeholder="Écrivez votre adresse mail ici.."
                        value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>"
-                       class="<?php echo isset($errors['email']) ? 'error' : ''; ?>">
+                       class="<?php echo isset($errors['email']) ? 'error' : ''; ?>"
+                >
                 <?php if(isset($errors['email'])): ?>
                     <span class="error-message"><?php echo $errors['email']; ?></span>
                 <?php endif; ?>

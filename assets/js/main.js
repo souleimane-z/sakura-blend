@@ -49,6 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+// Gestion du loader
+window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    }, 1500);
+});
 
 async function updateCreneaux() {
     const dateInput = document.getElementById('date');

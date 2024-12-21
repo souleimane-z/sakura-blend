@@ -1,4 +1,7 @@
-<?php include_once __DIR__ . '/includes/header.php'; ?>
+<?php
+    include_once __DIR__ . '/includes/header.php';
+    include_once __DIR__ . '/includes/loader.php';
+?>
 
     <section class="hero">
         <div class="hero-content">
@@ -11,7 +14,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="./assets/images/Logo/green-Sakura.svg" alt="Intérieur du restaurant Sakura Blend">
+            <img src="https://res.cloudinary.com/dhqh98spd/image/upload/v1734784050/green-Sakura_mzkzeq.svg" alt="Intérieur du restaurant Sakura Blend">
         </div>
     </section>
 
@@ -21,28 +24,45 @@
 
         <div class="dishes-grid">
             <div class="dish-card">
-                <img src="./assets/images/Menus/Plats/Vegan-Miso.webp" alt="Ramen Miso Végétal">
-                <h3>Ramen Miso Végétal</h3>
-                <p>Nouilles, bouillon miso, œuf mollet, champignons, légumes</p>
+                <div class="dish-image">
+                    <img src="https://res.cloudinary.com/dhqh98spd/image/upload/v1734784055/Vegan-Miso_xegsrm.webp" alt="Ramen Miso Végétal">
+                </div>
+                <div class="dish-content">
+                    <h3>Ramen Miso Végétal</h3>
+                    <p>Nouilles, bouillon miso, œuf mollet, champignons, légumes</p>
+                </div>
             </div>
 
             <div class="dish-card">
-                <img src="./assets/images/Menus/Sushis/Soy_Spicy-California-Roll_low-res.webp" alt="California Roll">
-                <h3>California Roll</h3>
-                <p>Avocat, crabe, concombre et masago (8 pièces)</p>
+                <div class="dish-image">
+                    <img src="https://res.cloudinary.com/dhqh98spd/image/upload/v1734784058/Soy_Spicy-California-Roll_low-res_rlepoa.webp" alt="California Roll">
+                </div>
+                <div class="dish-content">
+                    <h3>California Roll</h3>
+                    <p>Avocat, crabe, concombre et masago (8 pièces)</p>
+                </div>
             </div>
 
             <div class="dish-card">
-                <img src="./assets/images/Menus/Entrée/Vegetable-Gyoza.png" alt="Gyoza Végétariens">
-                <h3>Gyoza Végétariens</h3>
-                <p>Raviolis japonais aux légumes (6 pièces)</p>
+                <div class="dish-image">
+                    <img src="https://res.cloudinary.com/dhqh98spd/image/upload/v1734784054/Vegetable-Gyoza_pjth20.png" alt="Gyoza Végétariens">
+                </div>
+                <div class="dish-content">
+                    <h3>Gyoza Végétariens</h3>
+                    <p>Raviolis japonais aux légumes (6 pièces)</p>
+                </div>
             </div>
 
             <div class="dish-card">
-                <img src="./assets/images/Menus/Desserts/matcha_tiramisu-cropped.png" alt="Matcha Tiramisu">
-                <h3>Matcha Tiramisu</h3>
-                <p>Tiramisu au thé vert matcha</p>
+                <div class="dish-image">
+                    <img src="https://res.cloudinary.com/dhqh98spd/image/upload/v1734784052/matcha_tiramisu-cropped_udjh4h.png" alt="Matcha Tiramisu">
+                </div>
+                <div class="dish-content">
+                    <h3>Matcha Tiramisu</h3>
+                    <p>Tiramisu au thé vert matcha</p>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -67,5 +87,6 @@
             </div>
         </div>
     </section>
+    <?php include_once __DIR__ . "/testimonials.php"; ?>
 
 <?php include_once __DIR__ . '/includes/footer.php'; ?>

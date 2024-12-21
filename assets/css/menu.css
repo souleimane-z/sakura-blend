@@ -18,7 +18,7 @@
     display: block;
     width: 60px;
     height: 3px;
-    background: var(--logo-blue);
+    background: var(--primary-darkgreen);
     margin: 15px auto;
 }
 
@@ -29,7 +29,6 @@
     margin-bottom: 3rem;
 }
 
-/* Filtres */
 #menu-filters {
     margin-bottom: 3rem;
 }
@@ -65,7 +64,6 @@
     border-color: var(--primary-green);
 }
 
-/* Items du menu */
 #menu-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +86,6 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Ajout du conteneur pour l'image et le contenu */
 .menu-item-header {
     display: flex;
     align-items: flex-start;
@@ -123,7 +120,7 @@
 }
 
 .menu-price {
-    color: var(--logo-blue);
+    color: var(--primary-darkgreen);
     font-weight: 700;
     font-size: 1.1rem;
     position: absolute;
@@ -138,13 +135,11 @@
     line-height: 1.4;
 }
 
-/* Icône végétarien */
 .fa-leaf {
     color: var(--secondary-green);
     margin-left: 0.5rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .section-padding {
         padding: 30px 15px;

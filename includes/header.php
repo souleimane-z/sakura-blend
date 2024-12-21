@@ -51,18 +51,18 @@ $currentMeta = isset($pageMetas[$current_page]) ? $pageMetas[$current_page] : $p
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?php echo $currentMeta['title']; ?>">
     <meta property="og:description" content="<?php echo $currentMeta['description']; ?>">
-    <meta property="og:image" content="./assets/images/og-image.png">
+    <meta property="og:image" content="https://res.cloudinary.com/dhqh98spd/image/upload/v1734784060/og-image_bq1utp.png">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="<?php echo $currentMeta['title']; ?>">
     <meta property="twitter:description" content="<?php echo $currentMeta['description']; ?>">
-    <meta property="twitter:image" content="./assets/images/og-image.png">
+    <meta property="twitter:image" content="https://res.cloudinary.com/dhqh98spd/image/upload/v1734784060/og-image_bq1utp.png">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon.ico">
-    <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dhqh98spd/image/upload/v1734789319/apple-touch-icon_t1ejka.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dhqh98spd/image/upload/v1734789321/favicon-32x32_qu40do.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dhqh98spd/image/upload/v1734789319/favicon_vuyepj.ico">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dhqh98spd/image/upload/v1734789319/favicon_vuyepj.ico">
     <meta name="theme-color" content="#013984">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

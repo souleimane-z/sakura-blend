@@ -29,9 +29,11 @@ $menu = include __DIR__ . '/includes/menu.php';
                         <div class="entrees menu-restaurant">
                             <div class="menu-item-header">
 
-                                <img src="./assets/images/Menus/Entrée/<?php echo $item['image']; ?>"
+                                <img src="<?php echo $item['image']; ?>"
                                      alt="<?php echo $item['nom']; ?>"
-                                     class="menu-item-image">
+                                     class="menu-item-image"
+                                     title="<?php echo $item['nom']; ?>"
+                                >
 
                                 <div class="menu-item-content">
                                     <span class="clearfix">
@@ -55,9 +57,11 @@ $menu = include __DIR__ . '/includes/menu.php';
                         <div class="plats menu-restaurant">
                             <div class="menu-item-header">
 
-                                <img src="./assets/images/Menus/Plats/<?php echo $item['image']; ?>"
+                                <img src="<?php echo $item['image']; ?>"
                                      alt="<?php echo $item['nom']; ?>"
-                                     class="menu-item-image">
+                                     class="menu-item-image"
+                                     title="<?php echo $item['nom']; ?>"
+                                >
 
                                 <div class="menu-item-content">
                                     <span class="clearfix">
@@ -81,9 +85,11 @@ $menu = include __DIR__ . '/includes/menu.php';
                         <div class="sushis menu-restaurant">
                             <div class="menu-item-header">
 
-                                <img src="./assets/images/Menus/Sushis/<?php echo $item['image']; ?>"
+                                <img src="<?php echo $item['image']; ?>"
                                      alt="<?php echo $item['nom']; ?>"
-                                     class="menu-item-image">
+                                     class="menu-item-image"
+                                     title="<?php echo $item['nom']; ?>"
+                                >
 
                                 <div class="menu-item-content">
                                     <span class="clearfix">
@@ -107,9 +113,11 @@ $menu = include __DIR__ . '/includes/menu.php';
                         <div class="desserts menu-restaurant">
                             <div class="menu-item-header">
 
-                                <img src="./assets/images/Menus/Desserts/<?php echo $item['image']; ?>"
+                                <img src="<?php echo $item['image']; ?>"
                                      alt="<?php echo $item['nom']; ?>"
-                                     class="menu-item-image">
+                                     class="menu-item-image"
+                                    title="<?php echo $item['nom']; ?>"
+                                >
 
                                 <div class="menu-item-content">
                                     <span class="clearfix">
@@ -134,9 +142,11 @@ $menu = include __DIR__ . '/includes/menu.php';
                         <div class="thes menu-restaurant">
                             <div class="menu-item-header">
 
-                                <img src="./assets/images/Menus/Tea/<?php echo $item['image']; ?>"
+                                <img src="<?php echo $item['image']; ?>"
                                      alt="<?php echo $item['nom']; ?>"
-                                     class="menu-item-image">
+                                     class="menu-item-image"
+                                     title="<?php echo $item['nom']; ?>"
+                                >
 
                                 <div class="menu-item-content">
                                     <span class="clearfix">
@@ -160,9 +170,11 @@ $menu = include __DIR__ . '/includes/menu.php';
                         <div class="boissons menu-restaurant">
                             <div class="menu-item-header">
 
-                                <img src="./assets/images/Menus/Boissons/<?php echo $item['image']; ?>"
+                                <img src="<?php echo $item['image']; ?>"
                                      alt="<?php echo $item['nom']; ?>"
-                                     class="menu-item-image">
+                                     class="menu-item-image"
+                                     title="<?php echo $item['nom']; ?>"
+                                >
 
                                 <div class="menu-item-content">
                                     <span class="clearfix">
