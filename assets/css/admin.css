@@ -111,22 +111,6 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
 }
-/* Logo centre de la barre de nav, inifinitefree l'affiche mal
-.admin-nav::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
-    background-image: url('https://res.cloudinary.com/dhqh98spd/image/upload/v1734952043/admin-svgrepo-com_y2u0s1.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.6;
-    z-index: 1;
-}
-*/
 .admin-logo {
     display: flex;
     flex-direction: column;
@@ -161,7 +145,6 @@
     min-height: calc(100vh - 64px);
 }
 
-/* Sidebar */
 .admin-sidebar {
     background: var(--white);
     border-right: 1px solid var(--border);
@@ -471,12 +454,6 @@
         font-size: 0.8rem !important;
 
     }
-/* infinityfree error displays
-    .admin-nav::after {
-        background: transparent;
-        display: none;
-    }
-*/
     .admin-nav-right {
         gap: 0.5rem;
         justify-content: flex-end;
