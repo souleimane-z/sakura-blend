@@ -111,6 +111,20 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
 }
+
+.admin-logo-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.admin-logo-image img {
+    width: 60px;
+    height: 60px;
+    opacity: 0.6;
+}
+
 .admin-logo {
     display: flex;
     flex-direction: column;
@@ -428,12 +442,13 @@
 
     .admin-sidebar {
         display: none;
-        position: fixed;
-        top: 64px;
+        position: relative;
+        top: 0;
         left: 0;
         right: 0;
         background: var(--white);
         z-index: 1000;
+        height: 350px;
         padding: 1rem;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
@@ -446,23 +461,29 @@
         display: block;
     }
 
+
     .admin-nav {
         padding: 1rem;
+        z-index: 1001;
     }
 
     .admin-logo {
-        font-size: 0.8rem !important;
+        font-size: 0.9rem;
+    }
 
+    .admin-logo-image {
+        display: none;
     }
-    .admin-nav-right {
-        gap: 0.5rem;
-        justify-content: flex-end;
-    }
+
     .admin-sidebar-toggle,
     .admin-nav-right {
         width: 80px;
         display: flex;
         justify-content: flex-start;
+    }
+
+    .admin-nav-right {
+        justify-content: flex-end;
     }
 
     .admin-main {

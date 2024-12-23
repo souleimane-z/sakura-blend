@@ -163,6 +163,11 @@ $displayedReservations = $selectedDate ?
         <span>Sakura Blend</span>
         <span class="japanese-text">サクラ ブレンド</span>
     </div>
+
+    <div class="admin-logo-image">
+        <img src="https://res.cloudinary.com/dhqh98spd/image/upload/v1734952043/admin-svgrepo-com_y2u0s1.svg" alt="Admin Logo">
+    </div>
+
     <div class="admin-nav-right">
         <a href="../index.php" class="nav-link" title="Voir le site">
             <i class="fa-solid fa-eye"></i>
