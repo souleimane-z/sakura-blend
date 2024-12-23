@@ -29,13 +29,19 @@
     </div>
 
     <div class="footer-bottom">
+
         <p>&copy; <?php echo date("Y"); ?> Sakura Blend - Tous droits réservés</p>
+
         <p class="credit">Site codé par
             <a href="https://www.souleimane-z.com"
                target="_blank" rel="noopener noreferrer">
                 Souleimane
             </a>
         </p>
+
+        <a href="./admin/login.php" class="admin-link">
+            <i class="fa-solid fa-lock"></i>
+        </a>
     </div>
 </footer>
 </body>
