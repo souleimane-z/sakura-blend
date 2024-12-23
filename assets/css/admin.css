@@ -111,6 +111,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
 }
+/* Logo centre de la barre de nav, inifinitefree l'affiche mal
 .admin-nav::after {
     content: '';
     position: absolute;
@@ -123,11 +124,13 @@
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.6;
+    z-index: 1;
 }
-
+*/
 .admin-logo {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .admin-logo span:first-child {
@@ -308,16 +311,6 @@
     opacity: 0.5;
 }
 
-@media (max-width: 768px) {
-    .admin-container {
-        grid-template-columns: 1fr;
-    }
-
-    .admin-sidebar {
-        display: none;
-    }
-}
-
 .date-filter {
     margin-top: 1rem;
 }
@@ -434,4 +427,98 @@
 
 .reset-filter:hover {
     text-decoration: underline;
+}
+.admin-sidebar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+@media (max-width: 768px) {
+    .admin-container {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-sidebar {
+        display: none;
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        z-index: 1000;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .admin-sidebar.active {
+        display: block;
+    }
+
+    .admin-sidebar-toggle {
+        display: block;
+    }
+
+    .admin-nav {
+        padding: 1rem;
+    }
+
+    .admin-logo {
+        font-size: 0.8rem !important;
+
+    }
+
+    .admin-nav::after {
+        background: transparent;
+        display: none;
+    }
+
+    .admin-nav-right {
+        gap: 0.5rem;
+        justify-content: flex-end;
+    }
+    .admin-sidebar-toggle,
+    .admin-nav-right {
+        width: 80px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .admin-main {
+        padding: 1rem;
+    }
+
+    .messages-grid,
+    .reservations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .message-card,
+    .reservation-card {
+        margin-bottom: 1rem;
+    }
+
+    .date-filter {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .date-filter input[type="date"] {
+        width: 100%;
+    }
+
+    .reset-filter {
+        margin-left: 0;
+        text-align: center;
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .submenu {
+        margin-left: 1rem;
+    }
 }

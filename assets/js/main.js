@@ -91,3 +91,30 @@ async function updateCreneaux() {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.querySelector('.admin-sidebar');
+
+    sidebarToggle.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+        this.querySelector('i').classList.toggle('fa-bars');
+        this.querySelector('i').classList.toggle('fa-times');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target) && sidebar.classList.contains('active')) {
+            sidebar.classList.remove('active');
+            sidebarToggle.querySelector('i').classList.add('fa-bars');
+            sidebarToggle.querySelector('i').classList.remove('fa-times');
+        }
+    });
+
+    sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            sidebarToggle.querySelector('i').classList.add('fa-bars');
+            sidebarToggle.querySelector('i').classList.remove('fa-times');
+        });
+    });
+});

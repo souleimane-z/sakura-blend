@@ -141,6 +141,14 @@ $displayedReservations = $selectedDate ?
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dhqh98spd/image/upload/v1734951822/apple-touch-icon_ltss3m.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dhqh98spd/image/upload/v1734951822/favicon-32x32_sljde7.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dhqh98spd/image/upload/v1734951822/favicon-16x16_tid9pb.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/dhqh98spd/image/upload/v1734951821/favicon_otfclr.ico">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <meta name="theme-color" content="#013984">
+
     <title>Administration - Sakura Blend</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -148,6 +156,9 @@ $displayedReservations = $selectedDate ?
 </head>
 <body class="admin-body">
 <nav class="admin-nav">
+    <button class="admin-sidebar-toggle" id="sidebarToggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
     <div class="admin-logo">
         <span>Sakura Blend</span>
         <span class="japanese-text">サクラ ブレンド</span>
@@ -336,5 +347,7 @@ $displayedReservations = $selectedDate ?
         <?php endif; ?>
     </main>
 </div>
+
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
