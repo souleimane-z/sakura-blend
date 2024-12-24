@@ -8,6 +8,8 @@ Grâce à la barre de navigation, on peut se diriger vers la page de la carte av
 Les données des formulaires de contact et de réservation sont envoyées vers des fichiers CSV. Ces données sont ensuite récupérées grâce à PHP pour être affichées dans la session administrateur.
 Celui-ci aura la possibilité de vérifier les nouvelles réservations et d'accéder aux informations de contact. L'administrateur/administratrice pourra aussi archiver les messages et réservations pour une vue plus claire.
 
+Pour accéder à la partie administrateur, il faut cliquer sur l'icône de cadenas située tout en bas de la page. Vous serez redirigé vers un formulaire de connexion (identifiants disponibles dans *includes/admin-config*). Une fois connecté, vous aurez accès aux fonctionnalités.
+
 ![logo du restaurant](https://res.cloudinary.com/dhqh98spd/image/upload/v1735055320/green-cropped_rprufm_c_pad_w_200_h_200_ydgw1r.png)
 
 
