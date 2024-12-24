@@ -5,13 +5,12 @@ include_once __DIR__ . '/includes/header.php';
 $errors = [];
 $success = false;
 
-
 if(isset($_POST['envoyer'])) {
-
+    
     $nom = htmlspecialchars(trim($_POST['nom']));
     $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
     $sujet = htmlspecialchars(trim($_POST['sujet']));
-    $message = htmlspecialchars(trim($_POST['message']));
+    $message = trim($_POST['message']);
     $date = date('d/m/Y H:i');
 
     if(empty($nom)) {

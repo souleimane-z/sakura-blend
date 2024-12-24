@@ -245,6 +245,7 @@ $displayedReservations = $selectedDate ?
                                     <h3><?php echo htmlspecialchars($message['nom']); ?></h3>
                                     <span class="message-date"><?php echo $message['date']; ?></span>
                                 </div>
+                                <p><?php echo htmlspecialchars($message['email']); ?></p>
                                 <span class="message-subject"><?php echo htmlspecialchars($message['sujet']); ?></span>
                             </div>
                             <div class="message-content">

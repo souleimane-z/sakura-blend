@@ -268,12 +268,17 @@
 }
 
 .message-content {
+    border: 1px solid var(--border);
+    border-radius: 7px;
     margin-bottom: 1rem;
     color: var(--text-dark);
 }
 
 .message-content p {
     line-height: 1.5;
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
 }
 
 .message-footer {
