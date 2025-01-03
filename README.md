@@ -24,7 +24,7 @@ Pour accéder à la partie administrateur, il faut cliquer sur l'icône de caden
 ## Demo
 Site déployé via InfinityFree : 
 
-[Live-Demo du site](http://souleimane-z.wuaze.com/index.php?i=1)
+[Live-Demo du site](http://souleimane-z.wuaze.com/)
 
 ## Tech Stack
 
